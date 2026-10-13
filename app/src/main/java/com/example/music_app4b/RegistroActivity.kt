@@ -2,6 +2,7 @@ package com.example.music_app4b
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -16,7 +17,7 @@ class RegistroActivity : AppCompatActivity() {
     private lateinit var etNombre : EditText
     private lateinit var etCorreo: EditText
     private lateinit var etPassword: EditText
-    private lateinit var btnRegistrar: EditText
+    private lateinit var btnRegistrar: Button
 
     //crar instancia de DatabaseHelper
     private lateinit var dbHelper: DatabaseHelper
@@ -65,6 +66,7 @@ class RegistroActivity : AppCompatActivity() {
             //si el registro es correcto
             Toast.makeText(this, "El registro fue exitoso", Toast.LENGTH_SHORT).show()
             //cierra la pantalla actual y regresa a la pantalla anterior
+            //Prueba de git
         }else{
             Toast.makeText(this, "Error al registrar", Toast.LENGTH_SHORT).show()
 
